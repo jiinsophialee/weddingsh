@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신랑 측 계좌번호</title>
+
+</head>
+<body>
+
+<!-- Text and corresponding buttons -->
+<p>신랑 임성환: <button onclick="copyTextToClipboard('110-411-666181')"> 신한은행 110-411-666181 </button></p>
+<p>신랑 부모님: <button onclick="copyTextToClipboard('Text 2')">00은행 000-0000-0000 </button></p>
+
+<script>
+  // Function to copy text to clipboard and show alert
+  function copyTextToClipboard(text) {
+    // Create a temporary input element
+    var tempInput = document.createElement('textarea');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+
+    // Select and copy the text
+    tempInput.select();
+    document.execCommand('copy');
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Show a notification indicating which text was copied
+    alert('계좌번호가 복사되었습니다 :)');
+  }
+</script>
+
+</body>
+</html>
