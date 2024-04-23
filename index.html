@@ -5,12 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>신랑 측 계좌번호</title>
 
+ <style>
+    /* CSS for larger font size and centering buttons */
+    body {
+      font-size: 30px; /* Adjust the font size as needed */
+      font-family: 'Arial', sans-serif; /* Change the font family */
+      color: #333; /* Set default font color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px; /* Add margin to the bottom of each button container */
+      margin-left: 20px; /* Add margin to the left side of each button container */
+      margin-right: 20px; /* Add margin to the right side of each button container */
+    }
+
+    .copy-button {
+      background-color: #AEC08E; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 40px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 30px; /* Adjust the font size of the buttons */
+      margin: 5px auto; /* Adjust spacing between buttons */
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif; /* Change the font family */
+      display: block; /* Ensure buttons are displayed inline */
+    }
+
+    /* Reset margin for paragraphs */
+    .button-container p {
+      margin: -20px;
+    }
+
+    /* Hover effect */
+    .copy-button:hover {
+      background-color: #8B9971; /* Darker Green */
+    }
+  </style>
 </head>
 <body>
 
-<!-- Text and corresponding buttons -->
-<p>신랑 임성환: <button onclick="copyTextToClipboard('110-411-666181')"> 신한은행 110-411-666181 </button></p>
-<p>신랑 부모님: <button onclick="copyTextToClipboard('Text 2')">00은행 000-0000-0000 </button></p>
+</head>
+<body>
+
+<pre>
+<div class="button-container">
+  <!-- Text and corresponding buttons -->
+<p>신랑 계좌번호</p>
+<button class="copy-button" onclick="copyTextToClipboard('110-411-666181')">신한은행 임성환<br> 110-411-666181</button>
+</div>
+<div class="button-container">
+<p>신랑 아버지 계좌번호</p>
+<button class="copy-button" onclick="copyTextToClipboard('110-005-717324')">신한은행 임재광<br> 110-005-717324</button>
+</div>
+<div class="button-container">
+<p>신랑 어머니 계좌번호</p>
+<button class="copy-button" onclick="copyTextToClipboard('774-21-0090-277')">국민은행 이수진<br> 774-21-0090-277</button>
+</div>
+</pre>
 
 <script>
   // Function to copy text to clipboard and show alert
